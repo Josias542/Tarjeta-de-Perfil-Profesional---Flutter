@@ -48,7 +48,6 @@ class EjemploText extends StatelessWidget {
               letterSpacing: 1.2),
         ),
         Text(
-          'Este es un texto largo que puede ocupar múltiples líneas y mostrar cómo se comporta el widget Text con contenido extenso. Este es un texto largo que puede ocupar múltiples líneas y mostrar cómo se comporta el widget Text con contenido extenso. Este es un texto largo que puede ocupar múltiples líneas y mostrar cómo se comporta el widget Text con contenido extenso.',
           textAlign: TextAlign.center,
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
