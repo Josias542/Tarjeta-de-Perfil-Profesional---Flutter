@@ -94,7 +94,7 @@ class EjemploContainer extends StatelessWidget {
           margin: const EdgeInsets.all(8),
           child: const Center(
             child: Text(
-                'Container decorado hola Container decorado Container decorado'),
+                'Container decorado'),
           ),
         )
       ],
