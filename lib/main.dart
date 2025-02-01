@@ -19,18 +19,12 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
-
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
           child:
-              TarjetaPerfil() /*Text(
-          'Hola mundo',
-          style: TextStyle(
-            fontSize: 24,
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-          ),*/
+              TarjetaPerfil()
           ),
     );
   }
@@ -138,7 +132,6 @@ class EjemploLayouts extends StatelessWidget {
           ],
         ),
 
-        //Ejemplo de Column anidada
         Container(
           color: Colors.grey,
           padding: const EdgeInsets.all(8),
@@ -193,7 +186,7 @@ class TarjetaPerfil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300, // Ancho reducido aquí
+      width: 300,
       decoration: BoxDecoration(
         color: Colors.grey[200],
         borderRadius: BorderRadius.circular(15),
@@ -223,7 +216,7 @@ class TarjetaPerfil extends StatelessWidget {
           ),
           const SizedBox(height: 20),
 
-          // Contenido del perfil en caja blanca
+          // Contenido del perfil
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -293,9 +286,8 @@ class TarjetaPerfil extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
 
-                // Habilidades (ajustadas para el nuevo ancho)
                 Wrap(
-                  spacing: 6, // Reducido de 8
+                  spacing: 6,
                   runSpacing: 6,
                   alignment: WrapAlignment.center,
                   children: [
@@ -313,7 +305,7 @@ class TarjetaPerfil extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     _buildSocialIcon(Icons.facebook),
-                    const SizedBox(width: 12), // Reducido de 15
+                    const SizedBox(width: 12),
                     _buildSocialIcon(Icons.link),
                     const SizedBox(width: 12),
                     _buildSocialIcon(Icons.camera),
@@ -323,12 +315,11 @@ class TarjetaPerfil extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
 
-                // Botones (ligeramente más compactos)
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     _buildBoton(Icons.mail, 'Contactar'),
-                    const SizedBox(width: 8), // Reducido de 10
+                    const SizedBox(width: 8),
                     _buildBoton(Icons.download, 'CV'),
                   ],
                 ),
@@ -351,7 +342,6 @@ class TarjetaPerfil extends StatelessWidget {
     );
   }
 
-  // Resto de los métodos se mantienen igual...
 }
 
   Widget _buildHabilidad(String texto) {
